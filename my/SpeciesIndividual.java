@@ -3,12 +3,10 @@ package my;
 
 public class SpeciesIndividual
 {
-	//一条染色体
+	//chromosome
 	public int[] chromosome;
 
-	
-
-	//几个对应的适应度(第一个为总和的适应度)
+	//fitness(the first is the total fitness)
 	public double[] fitness;
 	
 	public SpeciesIndividual(int[] chromosome, double[] fitness)
@@ -35,7 +33,5 @@ public class SpeciesIndividual
 			str += fitness[i] + "\t";
 		}
 		return str;
-	}
-	
-	
+	}	
 }
