@@ -27,7 +27,7 @@
 
 1. The `main` method in `Run.java` is the entry to the whole program.
 
-        2. String path = "A.txt;"; 
+       2. String path = "A.txt;"; 
 Enter the path to the txt file at this location.
 
 
