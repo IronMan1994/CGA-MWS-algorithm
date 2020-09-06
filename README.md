@@ -31,12 +31,15 @@
 2. `String path = "A.txt;";` Enter the path to the TXT file at this location.
 
 3. Parameter setting.
+      
+      ```Java
+      r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");
+      ``` 
+      Input parameters in this method.
 
-      `r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");` Input parameters in this method.
-
-      * The first   parameter:  File path，
-      * The second  parameter:  Number of genes，
-      * The third   parameter:  Gene set size (k)，
+      * The first   parameter:  The path of TXT file，
+      * The second  parameter:  Number of genes in TXT file，
+      * The third   parameter:  The size of Gene set (k)，
       * The fourth  parameter:  Population size (N)，
       * The fifth   parameter:  Iteration steps (maxg)，
       * The sixth   parameter:  Mutation probability (Pm)，
@@ -47,4 +50,8 @@
       * "calfitness_01":  The original maximum weight sub-matrix solution model.
 4. After setting the parameters, CGA-MWS algorithm can be executed.
 
-## 
+## Some supplementary notes
+
+* The project provides a TXT file containing only `01` values, which can be used as a test sample for algorithm testing.
+* When testing is required, all `.java` files need to be downloaded.
+* 
