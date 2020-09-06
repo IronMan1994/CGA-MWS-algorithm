@@ -25,7 +25,10 @@
 
 ## Preparations before starting the program
 
-    1. The `main` method in `Run.java` is the entry to the whole program.
+1. The `main` method in `Run.java` is the entry to the whole program.
+
+        2. String path = "A.txt;"; 
+Enter the path to the txt file at this location.
 
 
 'You can use a TXT file in the same format as the sample file provided for code testing.
