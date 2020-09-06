@@ -32,6 +32,7 @@
 3. Parameter setting.
 
 `r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");` Input parameters in this method.
+
 	* The first   parameter: File path，
 	* The second  parameter: Number of genes，
 	* The third   parameter: Gene set size (k)，
