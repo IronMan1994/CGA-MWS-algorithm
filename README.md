@@ -28,9 +28,10 @@
 
 1. The `main` method in `Run.java` is the entry to the whole program.
 
-2. ```Java
-   ```
+2. 
+   ```Java
    String path = "A.txt;";
+   ```
    Enter the path to the TXT file at this location.
 
 3. Parameter setting.
