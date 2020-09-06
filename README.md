@@ -52,8 +52,8 @@
    * The seventh parameter:  Number of times the algorithm is executed，
    * The eighth  parameter:  Number of cycles when calculating p-value,
    * The ninth   parameter:  Model name ("calfitness_Cov", "calfitness_01"),
-   * <font color=#DC143C>"calfitness_Cov": Model based on coefficient of variation,</font>
-   * <font color=#DC143C>"calfitness_01":  The original maximum weight sub-matrix solution model.</font>
+   * <font color=Crimson>"calfitness_Cov": Model based on coefficient of variation,</font>
+   * <font color=Crimson>"calfitness_01":  The original maximum weight sub-matrix solution model.</font>
        
 4. After setting the parameters, CGA-MWS algorithm can be executed.
 
