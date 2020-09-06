@@ -16,9 +16,12 @@
 
 ## Format of TXT file for input algorithm
 
-| 栏目1 | 栏目2 |
-| ----- | ----- |
-| 内容1 | 内容2 |
+| Gene | TP53 | CDKN2A | CDKN2B| RB1 | CDK4| … |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| Sample_1 | 1 | 1.5 | 0 | 0 | 1 | … |
+| Sample_2 | 0.45 | 1 | 0 | 0.4 | 1.5 | … |
+| Sample_3 | 0 | 1.5 | 0 | 0.3 | 0 | … |
+| … | … | … | … | … | … | … |
 
 
 'You can use a TXT file in the same format as the sample file provided for code testing.
