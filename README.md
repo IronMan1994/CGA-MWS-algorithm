@@ -34,6 +34,7 @@
    ```
    
 3. Parameter setting.
+
       Input parameters in this method.
       ```Java
       r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");   
