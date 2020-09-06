@@ -31,19 +31,19 @@
 
 3. Parameter setting.
 
-`r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");` Input parameters in this method.
+  `r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");` Input parameters in this method.
 
-* The first   parameter: File path，
-* The second  parameter: Number of genes，
-* The third   parameter: Gene set size (k)，
-* The fourth  parameter: Population size (N)，
-* The fifth   parameter: Iteration steps (maxg)，
-* The sixth   parameter: Mutation probability (Pm)，
-* The seventh parameter: Number of times the algorithm is executed，
-* The eighth  parameter: Number of cycles when calculating p-value,
-* The ninth   parameter: Model name ("calfitness_Cov", "calfitness_01"),
-* "calfitness_Cov": Model based on coefficient of variation,
-* "calfitness_01":  The original maximum weight sub-matrix solution model
+  * The first   parameter: File path，
+  * The second  parameter: Number of genes，
+  * The third   parameter: Gene set size (k)，
+  * The fourth  parameter: Population size (N)，
+  * The fifth   parameter: Iteration steps (maxg)，
+  * The sixth   parameter: Mutation probability (Pm)，
+  * The seventh parameter: Number of times the algorithm is executed，
+  * The eighth  parameter: Number of cycles when calculating p-value,
+  * The ninth   parameter: Model name ("calfitness_Cov", "calfitness_01"),
+  * "calfitness_Cov": Model based on coefficient of variation,
+  * "calfitness_01":  The original maximum weight sub-matrix solution model
 
 
 'You can use a TXT file in the same format as the sample file provided for code testing.
