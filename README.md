@@ -41,17 +41,17 @@
       ``` 
       Input parameters in this method.
       
-      * The first   parameter:  The path of TXT file，
-      * The second  parameter:  Number of genes in TXT file，
-      * The third   parameter:  The size of Gene set (k)，
-      * The fourth  parameter:  Population size (N)，
-      * The fifth   parameter:  Iteration steps (maxg)，
-      * The sixth   parameter:  Mutation probability (Pm)，
-      * The seventh parameter:  Number of times the algorithm is executed，
-      * The eighth  parameter:  Number of cycles when calculating p-value,
-      * The ninth   parameter:  Model name ("calfitness_Cov", "calfitness_01"),
-      * "calfitness_Cov": Model based on coefficient of variation,
-      * "calfitness_01":  The original maximum weight sub-matrix solution model.
+   * The first   parameter:  The path of TXT file，
+   * The second  parameter:  Number of genes in TXT file，
+   * The third   parameter:  The size of Gene set (k)，
+   * The fourth  parameter:  Population size (N)，
+   * The fifth   parameter:  Iteration steps (maxg)，
+   * The sixth   parameter:  Mutation probability (Pm)，
+   * The seventh parameter:  Number of times the algorithm is executed，
+   * The eighth  parameter:  Number of cycles when calculating p-value,
+   * The ninth   parameter:  Model name ("calfitness_Cov", "calfitness_01"),
+   * "calfitness_Cov": Model based on coefficient of variation,
+   * "calfitness_01":  The original maximum weight sub-matrix solution model.
 4. After setting the parameters, CGA-MWS algorithm can be executed.
 
 ## Some supplementary notes
