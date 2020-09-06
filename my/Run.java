@@ -209,12 +209,11 @@ public class Run
 			for(int i =  0; i < max.speciesIndividual.chromosome.length; i++)
 			{
 				System.out.print(ga1.name[max.speciesIndividual.chromosome[i]] + "\t");
-			}
-			System.out.println(max.speciesIndividual.fitness[0] + "\t" + max.speciesIndividual.fitness[1] + "\t" + max.speciesIndividual.fitness[2]);	
-			System.out.println("fitness:");
-			for(int i = 0; i < max.speciesIndividual.fitness.length - 1; i++)
+			}	
+			System.out.println("\nfitness:");
+			for(int i = 0; i < max.speciesIndividual.fitness.length; i++)
 			{
-				System.out.print(max.speciesIndividual.fitness[i + 1] + "\t");
+				System.out.print(max.speciesIndividual.fitness[i] + "\t");
 			}
 			System.out.println("\n"+step+" times, the average execution time is：" + bd.doubleValue() + "s");
 			
