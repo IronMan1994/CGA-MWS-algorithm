@@ -11,9 +11,10 @@
 
 * Integrate the two models (a new model based on the coefficient of variation and a original maximum weight submatrix solving model), and simply enter the set model name, which is globally applicable and easy to operate.
 * Repeated operations of multiple groups are implemented in parallel through multiple threads to improve the efficiency of algorithm execution.
-* The genetic algorithm can be separated and executed separately, only in GA_Algorithm.javaAdd the main function and input parameters following the example below:</br>
+* The genetic algorithm can be separated and executed independently, only in `GA_Algorithm.java` add the main function and input parameters.
+* By adding the parameter of the number of times to execute the algorithm, the algorithm can be executed many times, and the results after each execution and the optimal value in the results of multiple execution algorithm can be printed.
 
-      r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov")
+
 
 
 
