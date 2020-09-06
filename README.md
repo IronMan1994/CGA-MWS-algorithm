@@ -54,7 +54,7 @@
 
 ## Some supplementary notes
 
-* The project provides a TXT file containing only `01` values, which can be used as a test sample for algorithm testing.
+* The project provides a TXT file `A.txt` containing only `01` values, which can be used as a test sample for algorithm testing.
 * When testing is required, all `.java` files need to be downloaded.
 * The CGA-MWS algorithm is based on JAVA8 implementation, please note the JAVA version when executing.
 * The CGA-MWS algorithm printouts are shown below:
