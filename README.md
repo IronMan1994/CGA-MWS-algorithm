@@ -23,7 +23,9 @@
 | … | … | … | … | … | … | … |
 * If you want to use the original maximum weight submatrix model, enter a TXT file containing only `01` binary values similar to the table format above.
 
-## 
+## Preparations before starting the program
+
+* 
 
 
 'You can use a TXT file in the same format as the sample file provided for code testing.
