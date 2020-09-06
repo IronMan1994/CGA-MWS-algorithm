@@ -33,10 +33,9 @@
 3. Parameter setting.
       
       ```Java
-      r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");
-      ``` 
-      Input parameters in this method.
-
+      r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");   
+      ``` Input parameters in this method.
+      
       * The first   parameter:  The path of TXT file，
       * The second  parameter:  Number of genes in TXT file，
       * The third   parameter:  The size of Gene set (k)，
