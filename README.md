@@ -14,8 +14,11 @@
 * The genetic algorithm can be separated and executed independently, only in `GA_Algorithm.java` add the main function and input parameters.
 * By adding the parameter of the number of times to execute the algorithm, the algorithm can be executed many times, and the results after each execution and the optimal value in the results of multiple execution algorithm can be printed.
 
+## Format of TXT file for input algorithm
 
-
+| 栏目1 | 栏目2 |
+| ----- | ----- |
+| 内容1 | 内容2 |
 
 
 'You can use a TXT file in the same format as the sample file provided for code testing.
