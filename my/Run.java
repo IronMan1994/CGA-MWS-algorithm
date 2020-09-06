@@ -278,7 +278,7 @@ public class Run
 		//The ninth   parameter: Model name ("calfitness_Cov", "calfitness_01"),
 		//"calfitness_Cov": Model based on coefficient of variation,
 		//"calfitness_01":  The original maximum weight sub-matrix solution model
-		r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");
+		r.run(paths, g, k, size, 1000, 0.3, 10, 1000, "calfitness_Cov");
 	}
 }
 
