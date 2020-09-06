@@ -52,8 +52,9 @@
    * The seventh parameter:  Number of times the algorithm is executed，
    * The eighth  parameter:  Number of cycles when calculating p-value,
    * The ninth   parameter:  Model name ("calfitness_Cov", "calfitness_01"),
-   * "calfitness_Cov": Model based on coefficient of variation,
-   * "calfitness_01":  The original maximum weight sub-matrix solution model.
+   
+         "calfitness_Cov": Model based on coefficient of variation,
+         "calfitness_01":  The original maximum weight sub-matrix solution model.
 4. After setting the parameters, CGA-MWS algorithm can be executed.
 
 ## Some supplementary notes
