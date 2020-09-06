@@ -1,6 +1,6 @@
 # CGA-MWS-algorithm
 
-
+***
 CGA-MWS algorithm JAVA source code
 
 You can use a TXT file in the same format as the sample file provided for code testing.
