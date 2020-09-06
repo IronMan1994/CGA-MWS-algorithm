@@ -53,7 +53,7 @@
    * The eighth  parameter:  Number of cycles when calculating p-value,
    * The ninth   parameter:  Model name ("calfitness_Cov", "calfitness_01"),
    * ```diff
-    - "calfitness_Cov": Model based on coefficient of variation,
+     - "calfitness_Cov": Model based on coefficient of variation,
      ```
    * ```diff
      - "calfitness_01":  The original maximum weight sub-matrix solution model.
