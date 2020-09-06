@@ -15,9 +15,8 @@
 * By adding the parameter of the number of times to execute the algorithm, the algorithm can be executed many times, and the results after each execution and the optimal value in the results of multiple execution algorithm can be printed.
 
 ## Format of TXT file for input algorithm
-
 | Gene | TP53 | CDKN2A | CDKN2B| RB1 | CDK4| … |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| -----: | -----: | -----: | -----: | -----: | -----: | -----: |
 | Sample_1 | 1 | 1.5 | 0 | 0 | 1 | … |
 | Sample_2 | 0.45 | 1 | 0 | 0.4 | 1.5 | … |
 | Sample_3 | 0 | 1.5 | 0 | 0.3 | 0 | … |
