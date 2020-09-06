@@ -58,3 +58,13 @@
 * When testing is required, all `.java` files need to be downloaded.
 * The CGA-MWS algorithm is based on JAVA8 implementation, please note the JAVA version when executing.
 * The CGA-MWS algorithm output is shown below.
+
+`
+NO.1 time 	The optimal gene set is：
+CDKN2B	CDK4	
+fitness:
+58.0	60.0	62.0	
+1 times, the average execution time is：0.21s
+p-value is: 1.0
+`
+
