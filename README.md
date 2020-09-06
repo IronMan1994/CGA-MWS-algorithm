@@ -12,7 +12,9 @@
 * Integrate the two models (a new model based on the coefficient of variation and a original maximum weight submatrix solving model), and simply enter the set model name, which is globally applicable and easy to operate.
 * Repeated operations of multiple groups are implemented in parallel through multiple threads to improve the efficiency of algorithm execution.
 * The genetic algorithm can be separated and executed separately, only in GA_Algorithm.javaAdd the main function and input parameters following the example below:</br>
-        fdsfsdfds
+
+
+                fdsfsdfds
 
 
 
