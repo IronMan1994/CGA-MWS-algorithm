@@ -13,7 +13,7 @@
 * Repeated operations of multiple groups are implemented in parallel through multiple threads to improve the efficiency of algorithm execution.
 * The genetic algorithm can be separated and executed separately, only in GA_Algorithm.javaAdd the main function and input parameters following the example below:</br>
 
-     fdsfsdfds
+      fdsfsdfds
 
 
 
