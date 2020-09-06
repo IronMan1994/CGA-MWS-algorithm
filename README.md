@@ -4,7 +4,7 @@
 
 ## A brief description of algorithm
 
-* INPUT: A weighted non-binary mutation matrix or A mutation matrix.
+* INPUT: A weighted non-binary mutation matrix or A mutation matrix, Parameter k.
 * OUTPUT: Gene set of size k.
 
 ## Some features of the algorithm
@@ -21,7 +21,9 @@
 | Sample_2 | 0.45 | 1 | 0 | 0.4 | 1.5 | … |
 | Sample_3 | 0 | 1.5 | 0 | 0.3 | 0 | … |
 | … | … | … | … | … | … | … |
-* If you want to use the original maximum weight submatrix model, enter a TXT file containing only `01'binary values similar to the table format above.
+* If you want to use the original maximum weight submatrix model, enter a TXT file containing only `01` binary values similar to the table format above.
+
+## 
 
 
 'You can use a TXT file in the same format as the sample file provided for code testing.
