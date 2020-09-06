@@ -38,7 +38,7 @@
    Input parameters in this method.
    ```Java
    String[] paths = path.split(";");
-	int g = 1126;
+   int g = 1126;
    int k = 2;
    int size = g / 2;
    r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");   
