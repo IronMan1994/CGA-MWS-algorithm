@@ -61,10 +61,15 @@
 
 `
 NO.1 time 	The optimal gene set is：
+
 CDKN2B	CDK4	
+
 fitness:
+
 58.0	60.0	62.0	
+
 1 times, the average execution time is：0.21s
+
 p-value is: 1.0
 `
 
