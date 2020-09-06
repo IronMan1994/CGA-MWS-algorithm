@@ -37,12 +37,16 @@
 
    Input parameters in this method.
    ```Java
+   String[] paths = path.split(";");
+	int g = 1126;
+   int k = 2;
+   int size = g / 2;
    r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");   
    ``` 
    * The first   parameter:  The path of TXT file，
    * The second  parameter:  Number of genes in TXT file，
    * The third   parameter:  The size of Gene set (k)，
-   * The fourth  parameter:  Population size (N)，
+   * The fourth  parameter:  Population size (N, this value is the size of all populations combined)，
    * The fifth   parameter:  Iteration steps (maxg)，
    * The sixth   parameter:  Mutation probability (Pm)，
    * The seventh parameter:  Number of times the algorithm is executed，
