@@ -11,8 +11,9 @@
 
 * Integrate the two models (a new model based on the coefficient of variation and a original maximum weight submatrix solving model), and simply enter the set model name, which is globally applicable and easy to operate.
 * Repeated operations of multiple groups are implemented in parallel through multiple threads to improve the efficiency of algorithm execution.
-* The genetic algorithm can be separated and executed independently, only in `GA_Algorithm.java` add the main function and input parameters.
+* Automatically execute p-value test after each algorithm run
 * By adding the parameter of the number of times to execute the algorithm, the algorithm can be executed many times, and the results after each execution and the optimal value in the results of multiple execution algorithm can be printed.
+* The genetic algorithm can be separated and executed independently, only in `GA_Algorithm.java` add the main function and input parameters.
 
 ## Format of TXT file for input algorithm
 | Gene | TP53 | CDKN2A | CDKN2B| RB1 | CDK4| … |
@@ -33,20 +34,14 @@
 
   `r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");` Input parameters in this method.
 
-  * The first   parameter: File path，
-  * The second  parameter: Number of genes，
-  * The third   parameter: Gene set size (k)，
-  * The fourth  parameter: Population size (N)，
-  * The fifth   parameter: Iteration steps (maxg)，
-  * The sixth   parameter: Mutation probability (Pm)，
-  * The seventh parameter: Number of times the algorithm is executed，
-  * The eighth  parameter: Number of cycles when calculating p-value,
-  * The ninth   parameter: Model name ("calfitness_Cov", "calfitness_01"),
-  * "calfitness_Cov": Model based on coefficient of variation,
-  * "calfitness_01":  The original maximum weight sub-matrix solution model
-
-
-'You can use a TXT file in the same format as the sample file provided for code testing.
-Or if you just want to run the code for testing, you can use the provided TXT file directly.
-The "main" function in Run.java is the entry point of the entire program. 
-Please adjust the parameters in the "main" function.'
+   * The first   parameter:  File path，
+   * The second  parameter:  Number of genes，
+   * The third   parameter:  Gene set size (k)，
+   * The fourth  parameter:  Population size (N)，
+   * The fifth   parameter:  Iteration steps (maxg)，
+   * The sixth   parameter:  Mutation probability (Pm)，
+   * The seventh parameter:  Number of times the algorithm is executed，
+   * The eighth  parameter:  Number of cycles when calculating p-value,
+   * The ninth   parameter:  Model name ("calfitness_Cov", "calfitness_01"),
+   * "calfitness_Cov": Model based on coefficient of variation,
+   * "calfitness_01":  The original maximum weight sub-matrix solution model.
