@@ -48,7 +48,7 @@
      * The eighth  parameter:  Number of cycles when calculating p-value,
      * The ninth   parameter:  Model name ("calfitness_Cov"),
 
-5. After setting the parameters, CGA-MWS algorithm can be executed.
+5. After setting the parameters, CGA-MWS algorithm is ready to be executed.
 
 ## Some supplementary notes
 
