@@ -18,31 +18,32 @@
 
 ## Preparations before starting the program
 
-1. You need to import the downloaded `my` folder and sample file `A.txt` into `eclipse` or `MyEclipse` for execution.
+1. You need to import the downloaded `my` folder and sample files into `eclipse` or `MyEclipse` with `JAVA8` for execution.
 
 2. The `main` method in `Run.java` is the entry to the whole program.
    ```Java
    Run r = new Run();
-	String path = "A.txt;";
-	String[] paths = path.split(";");
-	int g = 1126;
-	int k = 2;
-	int size = g / 2;
-	r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_01");
+   String path = "GBM_removeGene_GeneNumbers_911.txt;";
+   String[] paths = path.split(";");
+   
+   int g = 911;
+   int k = 6;
+   int size = g / 2;
+   r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
    ```
 
 3. Enter the path to the TXT file at this location, relative or absolute path.
    ```Java
-   String path = "A.txt;";
+   String path = "GBM_removeGene_GeneNumbers_911.txt;";
    ```
    
 4. Parameter setting.
 
    Input parameters in this method, just modify the parameters `g` and `K`.
-   The parameter `g` at the bottom is the number of genes in the `A.txt` file. It is not necessary to modify it.
+   The parameter `g` at the bottom is the number of genes in the `GBM_removeGene_GeneNumbers_911.txt` file. It is not necessary to modify it.
    ```Java
-   int g = 1126;
-   int k = 2;
+   int g = 911;
+   int k = 6;
    int size = g / 2;
    r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
    ``` 
@@ -60,9 +61,11 @@
 
 ## Some supplementary notes
 
-* When testing is required, all `.java` files need to be downloaded.
-* The CGA-MWS algorithm is based on JAVA8 implementation, please note the JAVA version when executing.
-* The CGA-MWS algorithm printouts are shown below:
+* This project provides two real data of GBM in this paper, `GBM_ GeneNumbers_ 920.txt` is a file that does not remove the genes expressed in the paper.
+* `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that removes the genes expressed in the paper.
+* To adjust the input sample file, note that the parameter g and parameter k are modified, and the parameter g is given in the file name.
+* If you input other custom files, please check the file format and adjust the parameters.
+* The printout of CGA-MWS algorithm after successful execution is as follows:
 
       NO.1  Execute the algorithm to reconstruct the initial population
       total time：0.6491s
