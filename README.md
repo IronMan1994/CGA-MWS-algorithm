@@ -4,7 +4,7 @@
 
 ## A brief description of algorithm
 
-* INPUT: a weighted non-binary mutation matrix `A`, a parameter K;
+* INPUT: a weighted non-binary mutation matrix `A`, a parameter `K`;
 * OUTPUT: a submatrix `M`.
 
 ## Format of TXT file for input algorithm
@@ -63,7 +63,7 @@
 
 * This project provides two real data of GBM in this paper, `GBM_ GeneNumbers_ 920.txt` is a file that does not remove the genes expressed in the paper.
 * `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that removes the genes expressed in the paper.
-* To adjust the input sample file, note that the parameter g and parameter k are modified, and the parameter g is given in the file name.
+* To adjust the input sample file, note that the parameter `g` and parameter `k` are modified, and the parameter g is given in the file name.
 * If you input other custom files, please check the file format and adjust the parameters.
 * The printout of CGA-MWS algorithm after successful execution is as follows:
 
