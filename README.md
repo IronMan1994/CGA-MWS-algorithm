@@ -23,34 +23,24 @@
    ![image](Resource_storage_display-1.png)
    ![image](Resource_storage_display-2.png)
    
-2. The `main` method in `Run.java` is the entry to the whole program, the following shows the key code in the `main` method:
+2. The `main` method in `Run.java` is the entry to the whole program.
   
-       Run r = new Run();
-       String path = "GBM_removeGene_GeneNumbers_911.txt;";
-       String[] paths = path.split(";");
-        
-       int g = 911;
-       int k = 6;
-       int size = g / 2;
-       r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
-   
-
 3. Enter the relative or absolute path of the `txt` file in the following statement.
 
        String path = "GBM_removeGene_GeneNumbers_911.txt;";
    
 4. Setting parameters.
-   * This project provides two real data of GBM in this paper, `GBM_ GeneNumbers_ 920.txt` is a file that does not remove the genes expressed in the paper.
-   * `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that removes the genes expressed in the paper.
-   * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, in the `r.run()` statement, only the parameter k is modified and the remaining parameters remain default.
+   * This project provides two real data of `GBM`, `GBM_ GeneNumbers_ 920.txt` is a file that does not remove the genes expressed in the paper. `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that deleted the genes mentioned in the paper. The parameter `g` is given in the file name.
+   * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, in the `r.run()` statement, only the parameter `k` is modified and other parameters remain the default.
+   * Modify the parameters on the code shown below:
    
          int g = 911;
          int k = 6;
          int size = g / 2;
          r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
  
-     * The first   parameter:  The path of TXT file，
-     * The second  parameter:  Number of genes in TXT file，
+     * The first   parameter:  The path of `txt` file，
+     * The second  parameter:  Number of genes in `txt` file，
      * The third   parameter:  The size of Gene set (k)，
      * The fourth  parameter:  Population size (N, this value is the size of all populations combined)，
      * The fifth   parameter:  Iteration steps (maxg)，
@@ -63,7 +53,6 @@
 
 ## Some supplementary notes
 
-* To adjust the input sample file, note that the parameter `g` and parameter `k` are modified, and the parameter g is given in the file name.
 * If you input other custom files, please check the file format and adjust the parameters.
 * The printout of CGA-MWS algorithm after successful execution is as follows:
 
