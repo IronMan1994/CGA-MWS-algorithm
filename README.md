@@ -4,44 +4,47 @@
 
 ## A brief description of algorithm
 
-* INPUT: A weighted non-binary mutation matrix or A mutation matrix, Parameter k.
-* OUTPUT: Gene set of size k.
-
-## Some features of the algorithm
-
-* Integrate the two models (a new model based on the coefficient of variation and a original maximum weight submatrix solving model), and simply enter the set model name, which is globally applicable and easy to operate.
-* Repeated operations of multiple groups are implemented in parallel through multiple threads to improve the efficiency of algorithm execution.
-* Automatically execute p-value test after each algorithm run
-* By adding the parameter of the number of times to execute the algorithm, the algorithm can be executed many times, and the results after each execution and the optimal value in the results of multiple execution algorithm can be printed.
-* The genetic algorithm can be separated and executed independently, only in `GA_Algorithm.java` add the main function and input parameters.
+* INPUT: a weighted non-binary mutation matrix `A`, a parameter K;
+* OUTPUT: a submatrix `M`.
 
 ## Format of TXT file for input algorithm
+
 | Gene | TP53 | CDKN2A | CDKN2B| RB1 | CDK4| … |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | Sample_1 | 1 | 1.5 | 0 | 0 | 1 | … |
 | Sample_2 | 0.45 | 1 | 0 | 0.4 | 1.5 | … |
 | Sample_3 | 0 | 1.5 | 0 | 0.3 | 0 | … |
 | … | … | … | … | … | … | … |
-* If you want to use the original maximum weight submatrix model, enter a TXT file containing only `01` binary values similar to the table format above.
 
 ## Preparations before starting the program
 
-1. The `main` method in `Run.java` is the entry to the whole program.
+1. You need to import the downloaded `my` folder and sample file `A.txt` into `eclipse` or `MyEclipse` for execution.
 
-2. Enter the path to the TXT file at this location.
+2. The `main` method in `Run.java` is the entry to the whole program.
+   ```Java
+   Run r = new Run();
+	String path = "A.txt;";
+	String[] paths = path.split(";");
+	int g = 1126;
+	int k = 2;
+	int size = g / 2;
+	r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_01");
+   ```
+
+3. Enter the path to the TXT file at this location, relative or absolute path.
    ```Java
    String path = "A.txt;";
    ```
    
-3. Parameter setting.
+4. Parameter setting.
 
-   Input parameters in this method.
+   Input parameters in this method, just modify the parameters `g` and `K`.
+   The parameter `g` at the bottom is the number of genes in the `A.txt` file. It is not necessary to modify it.
    ```Java
-   String[] paths = path.split(";");
    int g = 1126;
    int k = 2;
    int size = g / 2;
-   r.run(paths, g, k, size, 500, 0.3, 10, 1000, "calfitness_Cov");   
+   r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
    ``` 
    * The first   parameter:  The path of TXT file，
    * The second  parameter:  Number of genes in TXT file，
@@ -51,27 +54,24 @@
    * The sixth   parameter:  Mutation probability (Pm)，
    * The seventh parameter:  Number of times the algorithm is executed，
    * The eighth  parameter:  Number of cycles when calculating p-value,
-   * The ninth   parameter:  Model name ("calfitness_Cov", "calfitness_01"),
-   * ```diff
-     - "calfitness_Cov": Model based on coefficient of variation,
-     ```
-   * ```diff
-     - "calfitness_01":  The original maximum weight sub-matrix solution model.
-     ```
-     
-4. After setting the parameters, CGA-MWS algorithm can be executed.
+   * The ninth   parameter:  Model name ("calfitness_Cov"),
+
+5. After setting the parameters, CGA-MWS algorithm can be executed.
 
 ## Some supplementary notes
 
-* The project provides a TXT file `A.txt` containing only `01` values, which can be used as a test sample for algorithm testing.
 * When testing is required, all `.java` files need to be downloaded.
 * The CGA-MWS algorithm is based on JAVA8 implementation, please note the JAVA version when executing.
 * The CGA-MWS algorithm printouts are shown below:
 
-      NO.1 time 	The optimal gene set is：
-      CDKN2B	CDK4	
-      fitness:
-      58.0	60.0	62.0	
-      1 times, the average execution time is：0.21s
+      NO.1  Execute the algorithm to reconstruct the initial population
+      total time：0.6491s
+
+      NO.1 time, The optimal gene set is：{ PTEN, EGFR, PIK3R1, PIK3CA, COL1A2, PDGFRA, }
+      Fitness: 209.6769
+      CO(M): 70.5
+      ME(M): 139.1769
+
+      1 times, the average execution time is：0.6491s
       p-value is: 1.0
 
