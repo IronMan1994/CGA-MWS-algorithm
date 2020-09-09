@@ -205,16 +205,15 @@ public class Run
 			
 			//pring results
 			BigDecimal bd = new BigDecimal(time_count/step).setScale(4, RoundingMode.UP);
-			System.out.println("NO." + max.index + " time \t" + "The optimal gene set is：");
+			System.out.print("NO." + max.index + " time, " + "The optimal gene set is：{ ");
 			for(int i =  0; i < max.speciesIndividual.chromosome.length; i++)
 			{
-				System.out.print(ga1.name[max.speciesIndividual.chromosome[i]] + "\t");
-			}	
-			System.out.println("\nfitness:");
-			for(int i = 0; i < max.speciesIndividual.fitness.length; i++)
-			{
-				System.out.print(max.speciesIndividual.fitness[i] + "\t");
+				System.out.print(ga1.name[max.speciesIndividual.chromosome[i]] + ", ");
 			}
+			System.out.println("}");
+			System.out.println("Fitness: " + max.speciesIndividual.fitness[0]);
+			System.out.println("CO(M): " + max.speciesIndividual.fitness[1]);
+			System.out.println("ME(M): " + max.speciesIndividual.fitness[2]);
 			System.out.println("\n"+step+" times, the average execution time is：" + bd.doubleValue() + "s");
 			
 			//P value test
@@ -257,14 +256,12 @@ public class Run
 	{
 		Run r = new Run();
 	
-		String path = "A.txt;";
+		String path = "GBM_removeGene_GeneNumbers_911.txt;";
 		String[] paths = path.split(";");
 		
-		int g = 1126;
-		int k = 2;
+		int g = 911;
+		int k = 6;
 		int size = g / 2;
-		
-		System.out.println(size);
 		
 		//The first   parameter: File path，
 		//The second  parameter: Number of genes，
@@ -277,7 +274,7 @@ public class Run
 		//The ninth   parameter: Model name ("calfitness_Cov", "calfitness_01"),
 		//"calfitness_Cov": Model based on coefficient of variation,
 		//"calfitness_01":  The original maximum weight sub-matrix solution model
-		r.run(paths, g, k, size, 1000, 0.3, 10, 1000, "calfitness_Cov");
+		r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
 	}
 }
 

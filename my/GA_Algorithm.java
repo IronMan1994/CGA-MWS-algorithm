@@ -312,7 +312,7 @@ public class GA_Algorithm
 	//Fitness calculation based on coefficient of variation
 	public double[] calfitness_Cov(int[] chromosome, Data_Array B)
 	{	
-		double[] result = new double[5];
+		double[] result = new double[3];
 		double fitness = 0.0;
 		double red = 0.0,ifcancer = 0.0;
 		int x = 0;
@@ -367,10 +367,10 @@ public class GA_Algorithm
 		BigDecimal bd4 = new BigDecimal(ifcancer).setScale(4,RoundingMode.UP);
 		
 		result[0] = fitness;
-		result[1] = x;
-		result[2] = y;
-		result[3] = bd4.doubleValue();
-		result[4] = Double.valueOf(red);
+//		result[1] = x;
+//		result[2] = y;
+		result[1] = bd4.doubleValue();
+		result[2] = Double.valueOf(red);
 		
 		return result;	
 	}
