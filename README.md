@@ -22,7 +22,7 @@
 
    ![image](Resource_storage_display_1.png)
    ![image](Resource_storage_display_2.png)
-
+   
 2. The `main` method in `Run.java` is the entry to the whole program.
    ```Java
    Run r = new Run();
