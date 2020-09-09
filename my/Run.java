@@ -260,7 +260,7 @@ public class Run
 		String[] paths = path.split(";");
 		
 		int g = 911;
-		int k = 6;
+		int K = 6;
 		
 		//The first   parameter: File path，
 		//The second  parameter: Number of genes，
@@ -273,7 +273,7 @@ public class Run
 		//The ninth   parameter: Model name ("calfitness_Cov", "calfitness_01"),
 		//"calfitness_Cov": Model based on coefficient of variation,
 		//"calfitness_01":  The original maximum weight sub-matrix solution model
-		r.run(paths, g, k, g / 2, 1000, 0.3, 1, 1000, "calfitness_Cov");
+		r.run(paths, g, K, g / 2, 1000, 0.3, 1, 1000, "calfitness_Cov");
 	}
 }
 
