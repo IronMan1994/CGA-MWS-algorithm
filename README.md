@@ -23,7 +23,7 @@
    ![image](Resource_storage_display-1.png)
    ![image](Resource_storage_display-2.png)
    
-2. The `main` method in `Run.java` is the entry to the whole program.
+2. The `main` method in `Run.java` is the entry to the whole program, the following shows the code in the `main` method:.
    ```Java
    Run r = new Run();
    String path = "GBM_removeGene_GeneNumbers_911.txt;";
