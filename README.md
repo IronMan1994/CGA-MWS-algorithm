@@ -18,7 +18,7 @@
 
 ## The process of executing the project
 
-1. You need to import the downloaded `my` folder and sample files `GBM_ GeneNumbers_ 920.txt` and `GBM_ removeGene_ GeneNumbers_ 911.txt` into `eclipse` or `MyEclipse` and execute them in the `JAVA8` environment whenever it is possible. Files are stored as follows:</br>
+1. You need to import the downloaded `my` folder, sample files `GBM_ GeneNumbers_ 920.txt` and `GBM_ removeGene_ GeneNumbers_ 911.txt` into `eclipse` or `MyEclipse` and execute them in the `JAVA8` environment whenever it is possible. Files are stored as follows:</br>
 
    ![image](Resource_storage_display-1.png)
    ![image](Resource_storage_display-2.png)
