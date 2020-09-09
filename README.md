@@ -30,7 +30,7 @@
        String path = "GBM_removeGene_GeneNumbers_911.txt;";
    
 4. Setting parameters.
-   * This project provides two real data of `GBM`, `GBM_ GeneNumbers_ 920.txt` is a file processed according to the description of the paper, including 90 samples and 920 genes. And `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that deleted the genes mentioned in the paper. The parameter `g` is given in the file name.
+   * This project provides two real data of `GBM`, `GBM_ GeneNumbers_ 920.txt` is a file processed according to the description of the paper, including 90 samples and 920 genes. And `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that deleted the genes mentioned in the paper when K=4 is tested. The parameter `g` is given in the file name.
    * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, the parameter `k` can to be modified in [4,6] and other parameters remain the default in the `r.run()` statement.
    * If the input sample file `GBM_removeGene_GeneNumbers_920.txt` is used, the parameter `k` can to be modified in [2,3], the parameter `g` needs to be changed to 920 and other parameters remain the default in the `r.run()` statement. You should modify the parameters as follows:
 
@@ -53,16 +53,34 @@
 ## Some supplementary notes
 
 * If you input other custom files, please check the file format and adjust the parameters.
-* The printout of CGA-MWS algorithm after successful execution is as follows:
+* When the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, and all parameters are by default, the printout of CGA-MWS algorithm after successful execution is as follows:
 
-      NO.1  Execute the algorithm to reconstruct the initial population
-      total time：0.6491s
+      NO.1  Execute the algorithm
+      total time：0.5211s
 
-      NO.1 time, The optimal gene set is：{ PTEN, EGFR, PIK3R1, PIK3CA, COL1A2, PDGFRA, }
+      The best solution is obtained at the No.1 execution time, and the gene set is:{ PTEN, EGFR, PIK3R1, COL1A2, PDGFRA, PIK3CA, }
       Fitness: 209.6769
       CO(M): 70.5
       ME(M): 139.1769
 
-      1 times, the average execution time is：0.6491s
+      The average running time of (1) times executions is: 0.5211s
       p-value is: 1.0
 
+* The seventh parameter determines how many times to execute the algorithm. If you need to set different values, here is the output print when the parameter is 3:
+
+      NO.1  Execute the algorithm
+      total time：0.598s
+
+      NO.2  Execute the algorithm
+      total time：0.422s
+
+      NO.3  Execute the algorithm
+      total time：0.248s
+
+      The best solution is obtained at the No.1 execution time, and the gene set is:{ PTEN, EGFR, PIK3R1, PIK3CA, PDGFRA, COL1A2, }
+      Fitness: 209.6769
+      CO(M): 70.5
+      ME(M): 139.1769
+
+      The average running time of (3) times executions is: 0.4227s
+      p-value is: 1.0
