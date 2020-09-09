@@ -35,15 +35,15 @@
    * If the input sample file `GBM_removeGene_GeneNumbers_920.txt` is used, the parameter `k` can to be modified in [2,3], the parameter `g` needs to be changed to `920` and other parameters remain the default in the `r.run()` statement. You should modify the parameters as follows:
 
          int g = 911;
-         int k = 6;
-         r.run(paths, g, k, g / 2, 1000, 0.3, 1, 1000, "calfitness_Cov");
+         int K = 6;
+         r.run(paths, g, K, g / 2, 1000, 0.3, 1, 1000, "calfitness_Cov");
  
      * The first   parameter:  The path of `txt` file，
      * The second  parameter:  Number of genes in `txt` file，
-     * The third   parameter:  The size of Gene set (k)，
-     * The fourth  parameter:  Population size (N, this value is the size of all populations combined)，
-     * The fifth   parameter:  Iteration steps (maxg)，
-     * The sixth   parameter:  Mutation probability (Pm)，
+     * The third   parameter:  The size of Gene set (`K`)，
+     * The fourth  parameter:  Population size (`N`, this value is the size of all populations combined)，
+     * The fifth   parameter:  Iteration steps (`maxg`)，
+     * The sixth   parameter:  Mutation probability (`Pm`)，
      * The seventh parameter:  Number of times the algorithm is executed，
      * The eighth  parameter:  Number of cycles when calculating p-value,
      * The ninth   parameter:  Model name ("calfitness_Cov"),
