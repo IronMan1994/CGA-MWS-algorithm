@@ -23,17 +23,17 @@
    ![image](Resource_storage_display-1.png)
    ![image](Resource_storage_display-2.png)
    
-2. The `main` method in `Run.java` is the entry to the whole program, the following shows the code in the `main` method:.
-   ```Java
-   Run r = new Run();
-   String path = "GBM_removeGene_GeneNumbers_911.txt;";
-   String[] paths = path.split(";");
+2. The `main` method in `Run.java` is the entry to the whole program, the following shows the key code in the `main` method:
+  
+        Run r = new Run();
+        String path = "GBM_removeGene_GeneNumbers_911.txt;";
+        String[] paths = path.split(";");
+        
+        int g = 911;
+        int k = 6;
+        int size = g / 2;
+        r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
    
-   int g = 911;
-   int k = 6;
-   int size = g / 2;
-   r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
-   ```
 
 3. Enter the path to the TXT file at this location, relative or absolute path.
    ```Java
