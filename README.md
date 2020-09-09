@@ -52,8 +52,7 @@
 
 ## Some supplementary notes
 
-* If you input other custom 
-, please check the file format and adjust the parameters.
+* If you input other custom file, please check the file format and adjust the parameters.
 * When the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, and all parameters are by default, the printout of CGA-MWS algorithm after successful execution is as follows:
 
       NO.1  Execute the algorithm
