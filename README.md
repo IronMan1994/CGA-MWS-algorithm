@@ -36,8 +36,7 @@
    
          int g = 911;
          int k = 6;
-         int size = g / 2;
-         r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
+         r.run(paths, g, k, g / 2, 1000, 0.3, 1, 1000, "calfitness_Cov");
  
      * The first   parameter:  The path of `txt` file，
      * The second  parameter:  Number of genes in `txt` file，
