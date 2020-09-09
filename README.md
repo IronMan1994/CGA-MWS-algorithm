@@ -35,19 +35,19 @@
        r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
    
 
-3. Enter the path to the TXT file at this location, relative or absolute path.
+3. Enter the relative or absolute path of the `txt` file in the following statement.
 
        String path = "GBM_removeGene_GeneNumbers_911.txt;";
    
-4. Parameter setting.
-
-   Input parameters in this method, just modify the parameters `g` and `K`.
-   The parameter `g` at the bottom is the number of genes in the `GBM_removeGene_GeneNumbers_911.txt` file. It is not necessary to modify it.
-
-       int g = 911;
-       int k = 6;
-       int size = g / 2;
-       r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
+4. Setting parameters.
+   * This project provides two real data of GBM in this paper, `GBM_ GeneNumbers_ 920.txt` is a file that does not remove the genes expressed in the paper.
+   * `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that removes the genes expressed in the paper.
+   * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, in the `r.run()` statement, only the parameter k is modified and the remaining parameters remain default.
+   
+         int g = 911;
+         int k = 6;
+         int size = g / 2;
+         r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
  
    * The first   parameter:  The path of TXT file，
    * The second  parameter:  Number of genes in TXT file，
@@ -63,8 +63,6 @@
 
 ## Some supplementary notes
 
-* This project provides two real data of GBM in this paper, `GBM_ GeneNumbers_ 920.txt` is a file that does not remove the genes expressed in the paper.
-* `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that removes the genes expressed in the paper.
 * To adjust the input sample file, note that the parameter `g` and parameter `k` are modified, and the parameter g is given in the file name.
 * If you input other custom files, please check the file format and adjust the parameters.
 * The printout of CGA-MWS algorithm after successful execution is as follows:
