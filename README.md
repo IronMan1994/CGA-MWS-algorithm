@@ -30,10 +30,10 @@
        String path = "GBM_removeGene_GeneNumbers_911.txt;";
    
 4. Setting parameters.
-   * This project provides two real data of `GBM`, `GBM_ GeneNumbers_ 920.txt` is a file that does not remove the genes. And `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that deleted the genes mentioned in the paper. The parameter `g` is given in the file name.
-   * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, the parameter `k` need to be modified and other parameters remain the default in the `r.run()` statement.
-   * You should modify the parameters as follows:
-   
+   * This project provides two real data of `GBM`, `GBM_ GeneNumbers_ 920.txt` is a file processed according to the description of the paper, including 90 samples and 920 genes. And `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that deleted the genes mentioned in the paper. The parameter `g` is given in the file name.
+   * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, the parameter `k` can to be modified in [4,6] and other parameters remain the default in the `r.run()` statement.
+   * If the input sample file `GBM_removeGene_GeneNumbers_920.txt` is used, the parameter `k` can to be modified in [2,3], the parameter `g` needs to be changed to 920 and other parameters remain the default in the `r.run()` statement. You should modify the parameters as follows:
+
          int g = 911;
          int k = 6;
          r.run(paths, g, k, g / 2, 1000, 0.3, 1, 1000, "calfitness_Cov");
