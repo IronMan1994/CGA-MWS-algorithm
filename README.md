@@ -25,31 +25,30 @@
    
 2. The `main` method in `Run.java` is the entry to the whole program, the following shows the key code in the `main` method:
   
-        Run r = new Run();
-        String path = "GBM_removeGene_GeneNumbers_911.txt;";
-        String[] paths = path.split(";");
+       Run r = new Run();
+       String path = "GBM_removeGene_GeneNumbers_911.txt;";
+       String[] paths = path.split(";");
         
-        int g = 911;
-        int k = 6;
-        int size = g / 2;
-        r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
+       int g = 911;
+       int k = 6;
+       int size = g / 2;
+       r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
    
 
 3. Enter the path to the TXT file at this location, relative or absolute path.
-   ```Java
-   String path = "GBM_removeGene_GeneNumbers_911.txt;";
-   ```
+
+       String path = "GBM_removeGene_GeneNumbers_911.txt;";
    
 4. Parameter setting.
 
    Input parameters in this method, just modify the parameters `g` and `K`.
    The parameter `g` at the bottom is the number of genes in the `GBM_removeGene_GeneNumbers_911.txt` file. It is not necessary to modify it.
-   ```Java
-   int g = 911;
-   int k = 6;
-   int size = g / 2;
-   r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
-   ``` 
+
+       int g = 911;
+       int k = 6;
+       int size = g / 2;
+       r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
+ 
    * The first   parameter:  The path of TXT file，
    * The second  parameter:  Number of genes in TXT file，
    * The third   parameter:  The size of Gene set (k)，
