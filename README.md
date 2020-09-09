@@ -18,7 +18,7 @@
 
 ## The process of executing the project
 
-1. You need to import the downloaded `my` folder and sample files into `eclipse` or `MyEclipse` and execute them in the `JAVA8` environment whenever possible. Files are stored as follows:</br>
+1. You need to import the downloaded `my` folder and sample files into `eclipse` or `MyEclipse` and execute them in the `JAVA8` environment whenever it is possible. Files are stored as follows:</br>
 
    ![image](Resource_storage_display-1.png)
    ![image](Resource_storage_display-2.png)
