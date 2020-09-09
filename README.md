@@ -31,7 +31,7 @@
    
 4. Setting parameters.
    * This project provides two real data of `GBM`, `GBM_ GeneNumbers_ 920.txt` is a file that does not remove the genes. And `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that deleted the genes mentioned in the paper. The parameter `g` is given in the file name.
-   * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, in the `r.run()` statement, only the parameter `k` is modified and other parameters remain the default.
+   * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, the parameter `k` is modified and other parameters remain the default in the `r.run()` statement.
    * Modify the parameters on the code shown below:
    
          int g = 911;
