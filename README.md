@@ -18,7 +18,7 @@
 
 ## The process of executing the project
 
-1. You need to import the downloaded `my` folder and sample files into `eclipse` or `MyEclipse` and execute them in the `JAVA8` environment whenever it is possible. Files are stored as follows:</br>
+1. You need to import the downloaded `my` folder and sample files `GBM_ GeneNumbers_ 920.txt` and `GBM_ removeGene_ GeneNumbers_ 911.txt` into `eclipse` or `MyEclipse` and execute them in the `JAVA8` environment whenever it is possible. Files are stored as follows:</br>
 
    ![image](Resource_storage_display-1.png)
    ![image](Resource_storage_display-2.png)
@@ -30,7 +30,7 @@
        String path = "GBM_removeGene_GeneNumbers_911.txt;";
    
 4. Setting parameters.
-   * This project provides two real data of `GBM`, `GBM_ GeneNumbers_ 920.txt` is a file processed according to the description of the paper, including 90 samples and 920 genes. And `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that deleted the genes mentioned in the paper when `K=4` is tested. The parameter `g` is given in the file name.
+   * This project provides two real data of `GBM`, `GBM_ GeneNumbers_ 920.txt` is a file processed according to the description of the paper, including `90` samples and `920` genes. And `GBM_ removeGene_ GeneNumbers_ 911.txt` is a file that deleted the genes mentioned in the paper when `K=4` is tested. The parameter `g` is given in the file name.
    * If the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, the parameter `K` can to be modified in [4,6] and other parameters remain the default in the `r.run()` statement.
    * If the input sample file `GBM_removeGene_GeneNumbers_920.txt` is used, the parameter `K` can to be modified in [2,3], the parameter `g` needs to be changed to `920` and other parameters remain the default in the `r.run()` statement. You should modify the parameters as follows:
 
@@ -52,7 +52,8 @@
 
 ## Some supplementary notes
 
-* If you input other custom files, please check the file format and adjust the parameters.
+* If you input other custom 
+, please check the file format and adjust the parameters.
 * When the input sample file `GBM_removeGene_GeneNumbers_911.txt` is used, and all parameters are by default, the printout of CGA-MWS algorithm after successful execution is as follows:
 
       NO.1  Execute the algorithm
