@@ -1,13 +1,13 @@
 # CGA-MWS-algorithm
 
-# CGA-MWS algorithm JAVA source code
+# `JAVA` source code of CGA-MWS algorithm 
 
 ## A brief description of algorithm
 
 * INPUT: a weighted non-binary mutation matrix `A`, a parameter `K`;
 * OUTPUT: a submatrix `M`.
 
-## Format of TXT file for input algorithm
+## Example of `txt` file input to algorithm
 
 | Gene | TP53 | CDKN2A | CDKN2B| RB1 | CDK4| … |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -16,9 +16,9 @@
 | Sample_3 | 0 | 1.5 | 0 | 0.3 | 0 | … |
 | … | … | … | … | … | … | … |
 
-## Preparations before starting the program
+## The process of executing the project
 
-1. You need to import the downloaded `my` folder and sample files into `eclipse` or `MyEclipse` with `JAVA8` for execution. As shown in the figure below:</br>
+1. You need to import the downloaded `my` folder and sample files into `eclipse` or `MyEclipse` and execute them in the `JAVA8` environment whenever possible. Files are stored as follows:</br>
 
    ![image](Resource_storage_display-1.png)
    ![image](Resource_storage_display-2.png)
