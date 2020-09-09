@@ -49,15 +49,15 @@
          int size = g / 2;
          r.run(paths, g, k, size, 1000, 0.3, 1, 1000, "calfitness_Cov");
  
-   * The first   parameter:  The path of TXT file，
-   * The second  parameter:  Number of genes in TXT file，
-   * The third   parameter:  The size of Gene set (k)，
-   * The fourth  parameter:  Population size (N, this value is the size of all populations combined)，
-   * The fifth   parameter:  Iteration steps (maxg)，
-   * The sixth   parameter:  Mutation probability (Pm)，
-   * The seventh parameter:  Number of times the algorithm is executed，
-   * The eighth  parameter:  Number of cycles when calculating p-value,
-   * The ninth   parameter:  Model name ("calfitness_Cov"),
+     * The first   parameter:  The path of TXT file，
+     * The second  parameter:  Number of genes in TXT file，
+     * The third   parameter:  The size of Gene set (k)，
+     * The fourth  parameter:  Population size (N, this value is the size of all populations combined)，
+     * The fifth   parameter:  Iteration steps (maxg)，
+     * The sixth   parameter:  Mutation probability (Pm)，
+     * The seventh parameter:  Number of times the algorithm is executed，
+     * The eighth  parameter:  Number of cycles when calculating p-value,
+     * The ninth   parameter:  Model name ("calfitness_Cov"),
 
 5. After setting the parameters, CGA-MWS algorithm can be executed.
 
