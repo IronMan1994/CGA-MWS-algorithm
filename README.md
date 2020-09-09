@@ -19,7 +19,7 @@
 ## Preparations before starting the program
 
 1. You need to import the downloaded `my` folder and sample files into `eclipse` or `MyEclipse` with `JAVA8` for execution.
-   ![image](https://github.com/xxx/xx.png)
+   ![image](https://github.com/IronMan1994/CGA-MWS-algorithm/blob/master/Resource storage display.png)
 
 2. The `main` method in `Run.java` is the entry to the whole program.
    ```Java
