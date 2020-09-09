@@ -48,7 +48,7 @@ public class Run
 			for(int i = 0; i < ga1.MaxStep; i++)
 			{
 				start = System.currentTimeMillis();	
-				System.out.println(String.format("NO.%-2d Execute the algorithm to reconstruct the initial population", i + 1));
+				System.out.println(String.format("NO.%-2d Execute the algorithm", i + 1));
 				//threads
 				ExecutorService es = Executors.newFixedThreadPool(2);
 				Callable<Boolean> callable1 = new Callable<Boolean>() {
@@ -205,7 +205,7 @@ public class Run
 			
 			//pring results
 			BigDecimal bd = new BigDecimal(time_count/step).setScale(4, RoundingMode.UP);
-			System.out.print("NO." + max.index + " time, " + "The optimal gene set is：{ ");
+			System.out.print("The best solution is obtained at the " + "No."  + max.index +  " execution time, and the gene set is:{ ");
 			for(int i =  0; i < max.speciesIndividual.chromosome.length; i++)
 			{
 				System.out.print(ga1.name[max.speciesIndividual.chromosome[i]] + ", ");
@@ -214,7 +214,7 @@ public class Run
 			System.out.println("Fitness: " + max.speciesIndividual.fitness[0]);
 			System.out.println("CO(M): " + max.speciesIndividual.fitness[1]);
 			System.out.println("ME(M): " + max.speciesIndividual.fitness[2]);
-			System.out.println("\n"+step+" times, the average execution time is：" + bd.doubleValue() + "s");
+			System.out.println("\n" + "The average running time of (" + step + ") times executions is: " + bd.doubleValue() + "s");
 			
 			//P value test
 			double max_fitness = max.speciesIndividual.fitness[0];
